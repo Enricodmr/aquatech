@@ -11,7 +11,7 @@ body {
 :root {
     --tamanho-header: 80px;
     --tamanho-footer: 65px;
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+    --tamanho-banner: calc(55vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
 }
 
@@ -98,9 +98,9 @@ button  {
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color: #ffffff;
 }
-
+    
 .agora {
     font-weight: 800;
 }
@@ -117,7 +117,7 @@ button  {
 .titulo {
     color: #32b9cd;
     width: fit-content;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .banner {
@@ -153,14 +153,17 @@ button  {
 
 .social .container .boxes {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
     padding: 36px 0;
+    margin-left: 18%;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     align-items: center;
 }
@@ -189,4 +192,9 @@ button  {
 .login {
     background-image: url(../assets/imgs/bg-jelly-fish-para-home.png);
     background-size: 105%;
+}
+.titulobox{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 50px;
 }
